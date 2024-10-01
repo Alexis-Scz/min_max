@@ -38,3 +38,72 @@ def check_for_factor(base, factor):
     
 def square(n):
     return n*n  
+
+def nb_dig(n, d):
+    b=0
+    for i in range (0,n+1):
+        a=i*i
+        for c in str(a):
+            if c==str(d):
+                b=b+1
+    
+    return b
+
+# def format_duration(seconds):
+#     y=0
+#     d=0
+#     h=0
+#     m=0
+#     s=0
+#     rep=""
+#     while seconds>=31536000:
+#         seconds=seconds-31536000
+#         y=y+1
+#     if y!=0:
+#         if y>1:
+#             years=" years "
+#         else:
+#             years=" year "    
+#         rep=rep+ (str(y) + years)    
+#     while seconds>=86400:
+#         seconds=seconds-86400
+#         d=d+1
+#     if d!=0:
+#         if d>1:
+#             days=" days "
+#         else:
+#             days=" day "    
+#         rep=rep+ (str(d) + days)      
+#     while seconds>=3600:
+#         seconds=seconds-3600
+#         h=h+1
+#     if h!=0:
+#         if h>1:
+#             hours=" hours "
+#         else:
+#             hours=" hour "    
+#         rep=rep+ (str(h) + hours)         
+#     while seconds>=60:
+#         seconds=seconds-60
+#         m=m+1
+#     if m!=0:
+#         if m>1:
+#             minutes=" minutes"
+#         else:
+#             minutes=" minute"    
+#         rep=rep+ (str(m) + minutes)        
+#     s=seconds
+#     if s!=0:
+#         if s>1:
+#             scd=" seconds"
+#         else:
+#             scd=" second"
+#         if m>0:
+#             rep=rep+" and "        
+#         rep=rep+ (str(s) + scd)  
+#     if rep=="":
+#         return "now"
+#     else:
+#         return(rep)
+
+
