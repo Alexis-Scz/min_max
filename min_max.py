@@ -107,3 +107,29 @@ def nb_dig(n, d):
 #         return(rep)
 
 
+
+def find_smallest_int(arr):
+    a=arr[0]
+    for c in arr:
+        if c<a:
+            a=c
+    return a
+
+def update_light(current):
+    if current=="Red":
+        return "Green"
+    elif current=="Green":
+        return"Orange"
+    elif current=="Orange":
+        return"Red"
+    # Your code here.
+    
+    
+    def expression_matter(a, b, c):
+        prem=a*(b+c)
+        deuz=a*b*c
+        treuz=a+b*c
+        qtr=(a+b)*c
+        cnq=a+b+c
+        return max(prem,deuz,treuz,qtr,cnq)
+    
