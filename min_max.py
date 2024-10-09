@@ -125,11 +125,11 @@ def update_light(current):
     # Your code here.
     
     
-    def expression_matter(a, b, c):
-        prem=a*(b+c)
-        deuz=a*b*c
-        treuz=a+b*c
-        qtr=(a+b)*c
-        cnq=a+b+c
-        return max(prem,deuz,treuz,qtr,cnq)
+def expression_matter(a, b, c):
+    prem=a*(b+c)
+    deuz=a*b*c
+    treuz=a+b*c
+    qtr=(a+b)*c
+    cnq=a+b+c
+    return max(prem,deuz,treuz,qtr,cnq)
     
