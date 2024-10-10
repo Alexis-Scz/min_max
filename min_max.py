@@ -132,4 +132,6 @@ def expression_matter(a, b, c):
     qtr=(a+b)*c
     cnq=a+b+c
     return max(prem,deuz,treuz,qtr,cnq)
-    
+
+def array_diff(a, b):        
+    return [c for c in a if c not in b]
