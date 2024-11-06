@@ -148,3 +148,12 @@ def switch_it_up(number):
         case 8:return "Eight"
         case 9:return "Nine"
         case 0:return "Zero"
+
+def capitals(word):
+    i=0
+    a=[]
+    for c in word:
+        if c.isupper()==True:
+            a.append(i)
+        i=i+1
+    return a
