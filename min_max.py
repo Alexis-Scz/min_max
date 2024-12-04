@@ -157,3 +157,11 @@ def capitals(word):
             a.append(i)
         i=i+1
     return a
+
+def binary_array_to_number(arr):
+    a=""
+    for c in arr:
+        a=a+str(c)
+    
+    
+    return int(a,2)
