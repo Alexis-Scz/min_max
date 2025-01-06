@@ -165,3 +165,20 @@ def binary_array_to_number(arr):
     
     
     return int(a,2)
+
+
+def add_length(str_):
+    a=str_.split(" ")
+    b=[]
+    for c in a:
+        b.append(c+" "+str(len(c)))   
+    return b
+
+def factorial(n):
+    fact=1
+    if n>=0 and n<=12:
+        for i in range(1,n+1):
+            fact*=i
+    else:
+        raise ValueError
+    return fact
