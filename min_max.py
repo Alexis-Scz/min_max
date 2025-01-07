@@ -182,3 +182,15 @@ def factorial(n):
     else:
         raise ValueError
     return fact
+
+def repeat_str(repeat, string):
+    a=(print(repeat*string))
+    a=str(a)
+    return a
+
+def reverse_seq(n):
+    a=[]
+    for i in range(1,n+1):
+        a.append(i)
+    return a[::-1]
+
