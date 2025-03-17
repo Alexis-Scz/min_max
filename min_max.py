@@ -15,7 +15,6 @@ def str_count(strng, letter):
     return a    
 
 def human_years_cat_years_dog_years(human_years):
-    
     if human_years>2:
         cat=15+9+4*(human_years-2)
         dog=15+9+5*(human_years-2)
@@ -25,9 +24,7 @@ def human_years_cat_years_dog_years(human_years):
     else:
         cat=15
         dog=15
-
     return [human_years,cat,dog]
-
 
 def check_for_factor(base, factor):
     if base%factor==0:
@@ -45,68 +42,65 @@ def nb_dig(n, d):
         a=i*i
         for c in str(a):
             if c==str(d):
-                b=b+1
-    
+                b=b+1    
     return b
 
-# def format_duration(seconds):
-#     y=0
-#     d=0
-#     h=0
-#     m=0
-#     s=0
-#     rep=""
-#     while seconds>=31536000:
-#         seconds=seconds-31536000
-#         y=y+1
-#     if y!=0:
-#         if y>1:
-#             years=" years "
-#         else:
-#             years=" year "    
-#         rep=rep+ (str(y) + years)    
-#     while seconds>=86400:
-#         seconds=seconds-86400
-#         d=d+1
-#     if d!=0:
-#         if d>1:
-#             days=" days "
-#         else:
-#             days=" day "    
-#         rep=rep+ (str(d) + days)      
-#     while seconds>=3600:
-#         seconds=seconds-3600
-#         h=h+1
-#     if h!=0:
-#         if h>1:
-#             hours=" hours "
-#         else:
-#             hours=" hour "    
-#         rep=rep+ (str(h) + hours)         
-#     while seconds>=60:
-#         seconds=seconds-60
-#         m=m+1
-#     if m!=0:
-#         if m>1:
-#             minutes=" minutes"
-#         else:
-#             minutes=" minute"    
-#         rep=rep+ (str(m) + minutes)        
-#     s=seconds
-#     if s!=0:
-#         if s>1:
-#             scd=" seconds"
-#         else:
-#             scd=" second"
-#         if m>0:
-#             rep=rep+" and "        
-#         rep=rep+ (str(s) + scd)  
-#     if rep=="":
-#         return "now"
-#     else:
-#         return(rep)
-
-
+def format_duration(seconds):
+    y=0
+    d=0
+    h=0
+    m=0
+    s=0
+    rep=""
+    while seconds>=31536000:
+        seconds=seconds-31536000
+        y=y+1
+    if y!=0:
+        if y>1:
+            years=" years "
+        else:
+            years=" year "    
+        rep=rep+ (str(y) + years)    
+    while seconds>=86400:
+        seconds=seconds-86400
+        d=d+1
+    if d!=0:
+        if d>1:
+            days=" days "
+        else:
+            days=" day "    
+        rep=rep+ (str(d) + days)      
+    while seconds>=3600:
+        seconds=seconds-3600
+        h=h+1
+    if h!=0:
+        if h>1:
+            hours=" hours "
+        else:
+            hours=" hour "    
+        rep=rep+ (str(h) + hours)         
+    while seconds>=60:
+        seconds=seconds-60
+        m=m+1
+    if m!=0:
+        if m>1:
+            minutes=" minutes"
+        else:
+            minutes=" minute"    
+        rep=rep+ (str(m) + minutes)        
+    s=seconds
+    if s!=0:
+        if s>1:
+            scd=" seconds"
+        else:
+            scd=" second"
+        if m>0:
+            rep=rep+" and "        
+        rep=rep+ (str(s) + scd)  
+    if rep=="":
+        return "now"
+    else:
+        return(rep)
 
 def find_smallest_int(arr):
     a=arr[0]
@@ -121,9 +115,7 @@ def update_light(current):
     elif current=="Green":
         return"Orange"
     elif current=="Orange":
-        return"Red"
-    # Your code here.
-    
+        return"Red"  
     
 def expression_matter(a, b, c):
     prem=a*(b+c)
@@ -162,8 +154,6 @@ def binary_array_to_number(arr):
     a=""
     for c in arr:
         a=a+str(c)
-    
-    
     return int(a,2)
 
 
@@ -194,3 +184,11 @@ def reverse_seq(n):
         a.append(i)
     return a[::-1]
 
+def validate_pin(pin):
+    if len(pin)==4 or len(pin)==6:
+        return pin.isdigit()
+    else:
+        return False
+    
+def row_sum_odd_numbers(n):
+        return n**3    
