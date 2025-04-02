@@ -207,3 +207,35 @@ def plus(n): return  lambda i:i+n
 def minus(n): return lambda i:i-n
 def times(n): return lambda i:i*n
 def divided_by(n): return lambda i:i//n
+
+def chromosome_check(chromosome):
+    a=0
+    for c in chromosome:
+        if c=="Y":
+            a=a+1
+    if a==0:
+        return "Congratulations! You\'re going to have a daughter."
+    else:
+        return "Congratulations! You\'re going to have a son."
+
+def maps(a):
+    b=[]
+    for c in a:
+        c=c*2
+        b.append(c)
+    return b
+
+def count_smileys(arr):
+    w=0
+    for b in arr:
+        for dex,c in enumerate(b):
+            a=dex
+            if c==")"or c=="D":
+                i=b[a-1]
+                if i=="-"or i=="~":
+                    i=b[a-2]
+                    if i==";"or i==":":
+                        w=w+1 
+                elif i==";"or i==":":
+                    w=w+1
+    return w
