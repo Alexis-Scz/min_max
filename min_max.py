@@ -31,8 +31,7 @@ def check_for_factor(base, factor):
         return True
     else:
         return False
-    
-    
+
 def square(n):
     return n*n  
 
@@ -156,7 +155,6 @@ def binary_array_to_number(arr):
         a=a+str(c)
     return int(a,2)
 
-
 def add_length(str_):
     a=str_.split(" ")
     b=[]
@@ -193,20 +191,21 @@ def validate_pin(pin):
 def row_sum_odd_numbers(n):
         return n**3
 
-def zero(truc=None): return 0 if not truc else truc(0)
-def one(truc=None): return 1 if not truc else truc(1)
-def two(truc=None): return 2 if not truc else truc(2)
-def three(truc=None): return 3 if not truc else truc(3)
-def four(truc=None): return 4 if not truc else truc(4)
-def five(truc=None): return 5 if not truc else truc(5)
-def six(truc=None): return 6 if not truc else truc(6)
-def seven(truc=None): return 7 if not truc else truc(7)
-def eight(truc=None): return 8 if not truc else truc(8)
-def nine(truc=None): return 9 if not truc else truc(9)
-def plus(n): return  lambda i:i+n
-def minus(n): return lambda i:i-n
-def times(n): return lambda i:i*n
-def divided_by(n): return lambda i:i//n
+def calcul():
+    def zero(truc=None): return 0 if not truc else truc(0)
+    def one(truc=None): return 1 if not truc else truc(1)
+    def two(truc=None): return 2 if not truc else truc(2)
+    def three(truc=None): return 3 if not truc else truc(3)
+    def four(truc=None): return 4 if not truc else truc(4)
+    def five(truc=None): return 5 if not truc else truc(5)
+    def six(truc=None): return 6 if not truc else truc(6)
+    def seven(truc=None): return 7 if not truc else truc(7)
+    def eight(truc=None): return 8 if not truc else truc(8)
+    def nine(truc=None): return 9 if not truc else truc(9)
+    def plus(n): return  lambda i:i+n
+    def minus(n): return lambda i:i-n
+    def times(n): return lambda i:i*n
+    def divided_by(n): return lambda i:i//n
 
 def chromosome_check(chromosome):
     a=0
@@ -239,3 +238,8 @@ def count_smileys(arr):
                 elif i==";"or i==":":
                     w=w+1
     return w
+
+def reverse(st):
+    a=st.split(" ")
+    a.reverse()
+    return " ".join(a)
